@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+@font-face {
+    font-family: 'Young Serif';
+    src: url(/assets/fonts/Young_Serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Regular';
+    src: url(assets/fonts/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url(assets/fonts/static/Outfit-Bold.ttf);
+}
 
 * {
     margin: 0;
@@ -49,14 +62,14 @@ main {
 .prep-time {
     background-color: #fff7fc;
     padding: 28px;
-    border-radius: 12px;
     margin-bottom: 32px;
+    border-radius: 12px;
 }
 
 .prep-time h2 {
     font-size: 1.25rem;
     color: #7a284e;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit', serif;
     margin-bottom: 16px;
 }
 
@@ -93,11 +106,12 @@ main {
 }
 
 .ingredients-list li::marker,
-.prep-time-list li::marker,
-.instructions-list li::marker {
+.instructions-list li::marker,
+.prep-time-list li::marker {
     color: #854632;
     font-weight: 700;
 }
+
 
 .divider {
     border: none;
@@ -106,72 +120,67 @@ main {
     margin: 32px 0;
 }
 
-.instructions-list li {
-    margin-bottom: 16px;
-    padding-left: 16px;
-}
-
-.instructions-list li::marker {
-    font-weight: 700;
-}
 
 .nutrition-note {
     margin-bottom: 24px;
 }
 
-.nutrition-table {
+.nutrition-table{
     width: 100%;
     border-collapse: collapse;
 }
 
-.nutrition-table td {
-    padding: 14px 24px;
+.nutrition-table td{
     border-bottom: 1px solid #e3ddd7;
+    padding: 14px 24px;
 }
 
-.nutrition-table tr:last-child td {
+.nutrition-table tr:last-child td{
     border-bottom: none;
+
 }
 
-.nutrition-value {
+.nutrition-value{
     color: #854632;
     font-weight: 700;
 }
 
-footer {
+footer{
     text-align: center;
     padding: 25px 15px;
     font-size: 0.9rem;
     color: #5f564d;
 }
 
-footer a {
+footer a{
     color: #854632;
     text-decoration: none;
     font-weight: 600;
 }
 
-footer a:hover {
+footer a:hover{
     text-decoration: underline;
 }
 
+
 @media (max-width: 768px) {
-    main {
+    main{
         padding: 0;
     }
 
-    .container {
+    .container{
         padding: 24px;
         border-radius: 0;
     }
 
-    .recipe-title {
+    .recipe-title{
         font-size: 2rem;
     }
 
     .ingredients-section h2,
     .instructions-section h2,
-    .nutrition-section h2 {
+    .nutrition-section h2{
         font-size: 1.75rem;
     }
+    
 }
